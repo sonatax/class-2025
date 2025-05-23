@@ -1,6 +1,6 @@
 # Step 7. 仕上げ
 
-script.js
+js/scripts.js
 
 ```javascript
 mapboxgl.accessToken = '取得したaccessTokenを書いてね';

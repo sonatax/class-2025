@@ -10,8 +10,8 @@ index.html
 <title>地図を表示する - API Tutorial</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <!-- ここに Mapbox の JavascriptAPI と css を読み込むコードを書きます -->
-<script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet" />
 <style>
 /* ここにCSSを書きます */
 body { margin: 0; padding: 0;}
@@ -25,7 +25,7 @@ body { margin: 0; padding: 0;}
 <script>
 // mapbox の accessToken を設定
 mapboxgl.accessToken = '取得したaccessTokenを書いてね';
-// 紀尾井町周辺の地図を表示させる
+// 地図の中心を山口大学に変更して表示させる
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v11',

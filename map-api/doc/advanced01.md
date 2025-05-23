@@ -10,8 +10,8 @@ index.html
 <title>地図を表示する - API Tutorial</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <!-- ここに Mapbox の JavascriptAPI と css を読み込むコードを書きます -->
-<script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet" />
 <style>
 /* ここにCSSを書きます */
 body { margin: 0; padding: 0;}
@@ -28,6 +28,7 @@ mapboxgl.accessToken = '取得したaccessTokenを書いてね';
 // 紀尾井町周辺の地図を表示させる
 var map = new mapboxgl.Map({
     container: 'map',
+    // 地図のスタイルを衛星写真に変える
     style: 'mapbox://styles/mapbox/satellite-streets-v11',
     center: [139.736897, 35.679584],
     zoom: 15

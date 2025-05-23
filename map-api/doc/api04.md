@@ -10,9 +10,9 @@ index.html
 <title>地図を表示する - API Tutorial</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <!-- ここに Mapbox の JavascriptAPI と css を読み込むコードを書きます -->
-<script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@ index.html
 </html>
 ```
 
-script.js
+js/scripts.js
 
 ```javascript
 mapboxgl.accessToken = '取得したaccessTokenを書いてね';

@@ -1,6 +1,6 @@
 # Step 6. API にリクエストする Part.2
 
-script.js
+js/scripts.js
 
 ```javascript
 mapboxgl.accessToken = '取得したaccessTokenを書いてね';
