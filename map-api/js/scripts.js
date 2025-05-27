@@ -1,4 +1,4 @@
-mapboxgl.accessToken = '取得したaccessTokenを書いてね';
+mapboxgl.accessToken = '取得したMapboxのアクセストークンをここに入力してください';
 var allMarkers = [];
 
 // 地図を初期化する
@@ -47,11 +47,15 @@ function initMap() {
 
 // 位置（緯度、経度）を基に周辺のホテル情報を検索する関数
 function searchHotels(lat, lng, placesService) {
-  // Places APIのリクエストを設定
+  const location = new google.maps.LatLng(lat, lng);
+  if (typeof location.lat() !== 'number' || typeof location.lng() !== 'number') {
+    console.error("Invalid location data provided to nearbySearch");
+    return; // Or handle the error appropriately
+  }
   const request = {
-    location: new google.maps.LatLng(lat, lng),
-    radius: '3000', // 検索半径（メートル）
-    type: ['lodging'] // 宿泊施設を検索
+    location,
+    radius: 3000, // 検索半径（メートル）
+    type: 'lodging' // 宿泊施設を検索
   };
 
   // Google Places APIの周辺検索を実行
