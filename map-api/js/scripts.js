@@ -1,4 +1,4 @@
-mapboxgl.accessToken = '取得したaccessTokenを書いてね';
+mapboxgl.accessToken = 'Mapbox_AccessToken'; // ここにあなたのMapboxアクセストークンを入力してください
 var allMarkers = [];
 
 // 地図を初期化する
